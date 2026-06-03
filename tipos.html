@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de Sistemas Oprativos</title>
-    <link rel="stylesheet" href="asetts/CSS/style.css">
-    <link rel="stylesheet" href="./asetts/CSS/tipos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tipos.css">
 </head>
 
 <body>
@@ -15,22 +13,20 @@
 
         <div id="cabecera">
 
-            <div id="titulo">
-                <h1>Tipos de Sistemas Operativos</h1>
-                <img src="./asetts/images/logo.png" alt="" id="logo">
-            </div>
+            <h1>Tipos de Sistemas Operativos</h1>
+
+
 
             <div id="menu">
 
-                <a href="./influencia.html">Influencia</a>
+                <a href="influencia.html" class="link">Influencia</a>
 
-                <a href="./index.html">inicio</a>
+                <a href="index.html" class="link">inicio</a>
 
-                <a href="./contacto.html">formulario de contacto</a>
-
-                <a href=""></a>
+                <a href="contacto.html" class="link">formulario de contacto</a>
 
             </div>
+            <img src="assets/images/logo.png" alt="" id="logo">
         </div>
 
         <div id="hero_dos">
@@ -38,8 +34,8 @@
         </div>
 
         <div id="main">
-            <ul>
-                <li>
+            <ul id="lista">
+                <li id="mono">
                     <h3>Sistemas Monousuario</h3><br>
                     <p>Son los sistemas operativos que solo permiten un usuario y al mismo tiempo y solamente una
                         cuenta, son sistemas operativos
@@ -48,7 +44,7 @@
                         hecho que los sistemas operativos actuales sean como son.
                     </p>
                 </li>
-                <li>
+                <li id="usando">
                     <h3>Sistemas multiusuario</h3>
                     <p>Son los sistemas que permiten que varias personas utilizen el ordenador al mismo tiempo y tambien
                         permite varias cuentas, un ejemplo de multiusuario de cuando se empezaron a utizar en la <a
@@ -56,17 +52,35 @@
                         seguridad y organización por que cada
                         usuario solamente puede acceder a sus archivos y configuraciones.</p>
                 </li>
-                <li>
+                <li id="multi">
                     <h3> Sistemas multitarea</h3>
                     <p>Los sistemas operativos multitarea son los sistemas operativos que permiten cambiar entre tareas
                         sin finalizar la tarea que se estaba ejecutando para ejucutar la que va a ejecutar o en otras
-                        palabras que puedes ejecutar varios programas a la vez, <u></u>n ejemplo seria UNIX que empezo en la
+                        palabras que puedes ejecutar varios programas a la vez, <u></u>n ejemplo seria UNIX que empezo
+                        en la
                         <a href="./index.html#tercera">tercera generación</a> actualmente
-                        practicamente todos los sistemas operativos son asi.</p>
+                        practicamente todos los sistemas operativos son asi.
+                    </p>
+                </li>
+                <li id="real">
+                    <h3>Sistemas de tiempo real</h3>
+                    <p>Los Sistemas de tiempo real son los sistemas operativos que responden a los
+                        procesos y eventos en un tiempo muy corto y predecible. Hay dos tipos los estrictos y los no
+                        estrictos.Un ejemplo de no estrictos serian Windows10 y windows 11que dan una respuesta muy
+                        rapida pero puede fallar por eso no son tan estrictos. los estrictos Están diseñados para
+                        ejecutar tareas que requieren una respuesta rápida y fiable. Los estrictosse utilizan para por
+                        ejemplo dispositivos medicos, aviones, etc cosas que si tienen un fallo puede ser fatal para las
+                        personas que lo estan usando o para las personas en las que se estan usando como los
+                        dispositivos medicos por eso son estrictos.</p>
                 </li>
                 <li>
-                    <h3>Sistemas de tiempo real</h3>
-                    
+                    <h3>Sistemas de tiempo compartido</h3>
+                    <p>Los sistas de tiempo conpartido son los sistemas Operativos que permiten que varios usuarios o
+                        procesos utilicen el procesador al mismo tiempo. Para conseguirlo, la CPU
+                        reparte su tiempo en pequeños intervalos entre los distintos procesos. Esta trecnica da la
+                        sensación de que cada usuario tiene todo el sistema operatiivo para si mismo aunque en realidad
+                        estas compartiendo los recursos con los otros usuario y aplicaciones. Un ejemplo muy conocido de
+                        sistemas de tiempo compartido es Linux.</p>
                 </li>
             </ul>
         </div>
