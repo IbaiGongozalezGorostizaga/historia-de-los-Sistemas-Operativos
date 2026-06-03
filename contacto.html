@@ -1,6 +1,7 @@
 <html lang="es-ES">
 
 <head>
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
@@ -9,23 +10,54 @@
 </head>
 
 <body>
+    <div id="titulo_form">
+            <h1>Contacta con nosotro atraves de este formulario</h1>
+        <div id="menu">
+
+            <a href="influencia.html" class="link">Influencia</a>
+
+            <a href="index.html"class="link">inicio</a>
+
+            <a href="tipos.html"class="link">Tipos</a>
+
+        </div>
+    </div>
+
     <div id="formulario">
         <form action="" method="post">
+            <div class="form-group">
 
-            <b>Nombre:</b> <br />
-            <input type="text" name="nombre" value="">
-            <br />
-
-            <b>Apellidos</b> <br />
-            <input type="text" name="apellidos" value="">
-            <br />
-
-            <b> Correo</b> <br />
-            <input type="email" name="correo_electronico">
-            <br />
-
-            <input type="submit" value="Enviar">
+                <label for="nombre">Nombre</label><br />
+                <input type="text" name="nombre" value="" minlength="2" maxlength="30" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+">
+                <br />
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label> <br />
+                <input type="text" name="apellidos" value="" minlength="2" maxlength="40"
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+">
+                <br />
+                <label for="pais">País:</label><br />
+            </div>
+            <div class="form-group">
+                <select name="pais" id="pais">
+                    <option value="">Seleccione un país</option>
+                    <option value="es">España</option>
+                    <option value="fr">Francia</option>
+                    <option value="it">Italia</option>
+                    <option value="de">Alemania</option>
+                    <option value="pt">Portugal</option>
+                </select><br />
+            </div>
+            <div class="form-group">
+                <label for="correo" class="col-lg-8 control-label">Correo</label><br />
+                <input type="email" name="correo_electronico" minlength="10" maxlength="40">
+                <br />
+            </div><br />
+            <div class="form-group">
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            </div>
         </form>
+    </div>
 </body>
 
 </html>
