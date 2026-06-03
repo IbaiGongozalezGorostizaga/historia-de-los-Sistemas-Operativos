@@ -1,12 +1,10 @@
 <html lang="es-ES">
 
 <head>
-    <link rel="stylesheet" href="./asetts/CSS/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>evolución Sistemas Operativos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -14,41 +12,40 @@
     <div id="contenedor">
 
         <div id="cabecera">
-            <div id="titulo">
-                <h1>Historia de los Sistemas Operativos</h1>
-                <img src="./asetts/images/logo.png" alt="" id="logo">
-            </div>
+
+            <h1>Historia de los Sistemas Operativos</h1>
+
+
 
             <div id="menu">
 
-                <a href="./influencia.html">Influencia</a>
+                <a href="influencia.html" class="link">Influencia</a>
 
-                <a href="./tipos.html">tipos</a>
+                <a href="tipos.html" class="link">tipos</a>
 
-                <a href="contacto.html">formulario de contacto</a>
-
-                <a href=""></a>
+                <a href="contacto.html" class="link">formulario de contacto</a>
 
             </div>
+            <img src="assets/images/logo.png" alt="" id="logo">
         </div>
         <div id="hero">
-            <img src="./asetts/images/hero.png" alt="" class="hero">
+            <img src="assets/images/hero.png" alt="" class="hero">
         </div>
 
         <div id="main">
 
-            <ul>
+            <ul id="lista">
                 <li>
                     <h2>Evolución Sistemas Operativos</h2>
                 </li>
-                <li>
+                <li id="primera">
                     <h3>primera generación (1940 - 1956):Lenguaje máquina</h3><br />
 
                     <p> En la primera generación los ordenadores se programaban directamente
                         en lenguaje máquina mediante tarjetas perforadas. Todavía no existían
                         sistemas operativos y cada programa controlaba completamente el hardware.</p>
                 </li>
-                <li>
+                <li id="segunda">
                     <h3>Segunda Generación (1956 - 1964):Sistemas por lotes</h3>
 
                     <p>En la segunda generación aparecieron los primeros sistemas operativos por lotes (batch systems),
@@ -57,23 +54,26 @@
                 </li>
                 <li id="tercera">
                     <h3>Tercera Generación (1964 - 1980):UNIX y multiprogramación</h3>
-                    <p>En la tercera se empezo a usar multiprogramación, la CPU dividia su tiempo entre varios procesos al mismo
+                    <p>En la tercera se empezo a usar multiprogramación, la CPU dividia su tiempo entre varios procesos
+                        al mismo
                         tiempo, tambien permitiendo que varios usuarios interactuen con un ordenador al mismo tiempo.
-                        Durante esta generación aparecierón algunos sistemas inportates como UNIX</p>
+                        Durante esta generación aparecierón algunos sistemas inportates como UNIX.</p>
                 </li>
 
-                <li>
+                <li id="cuarta">
                     <h3>Cuarta Generación (1980 - 2000):PCs y GUI</h3>
-                    <p>En la cuarta generación con la aparición de los microprocesadores comenzaron a hacerse más conocidos
+                    <p>En la cuarta generación con la aparición de los microprocesadores comenzaron a hacerse más
+                        conocidos
                         los ordenadores personales (PC). Los sistemas operativos evolucionaron
                         hacia interfaces gráficas de usuario (GUI). MS-DOS dio paso a Windows
                         de Microsoft, Macintosh de Apple y Linux, que destacó por ser software libre.</p>
                 </li>
 
-                <li>
+                <li id="quinta">
                     <h3>Quinta Generación (2000 - Actualidad):Android e iOS y la IA y nube</h3>
 
-                    <p>En la quinta generación con la aparición de los teléfonos móviles y las tablets surgieron sistemas
+                    <p>En la quinta generación con la aparición de los teléfonos móviles y las tablets surgieron
+                        sistemas
                         operativos optimizados para pantallas táctiles y un bajo consumo energético,
                         como Android e iOS. Actualmente los sistemas operativos se centran en
                         la virtualización, la computación en la nube, la ciberseguridad y la
@@ -83,6 +83,9 @@
             </ul>
 
         </div>
+        <footer>
+            <p></p>
+        </footer>
     </div>
 </body>
 
