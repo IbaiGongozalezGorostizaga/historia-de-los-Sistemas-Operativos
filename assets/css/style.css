@@ -14,13 +14,18 @@ h1 {
 
 #cabecera {
     position: sticky;
-    display: flex;
+    /*display: flex;*/
     top: 0;
     background-color: black;
     height: 7em;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: space-between;
     align-items: flex-start;
+
+    img {
+        position: relative;
+        float: right;
+    }
 }
 
 #logo {
