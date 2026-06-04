@@ -19,8 +19,11 @@ body {
             rgba(29, 79, 145, 0.14),
             transparent 32%),
         linear-gradient(160deg, #08111d 0%, #0b1726 45%, #0a1421 100%);
-    color: var(--text);
     min-height: 100vh;
+}
+
+#main {
+    color: var(--text);
 }
 
 /* Carousel Styles */
