@@ -10,7 +10,7 @@
 }
 
 body {
-    margin: 0;
+
     font-family: Inter, sans-serif;
     background: radial-gradient(circle at top left,
             rgba(37, 99, 184, 0.18),
@@ -24,11 +24,12 @@ body {
 
 #main {
     color: var(--text);
+    margin-top: 120px;
 }
 
 /* Carousel Styles */
 .carousel-item {
-    height: 100vh;
+    height: 70vh;
     min-height: 400px;
     background-size: cover;
     background-position: center;
@@ -99,6 +100,10 @@ body {
     transform: translateY(-50%) scale(0.95);
 }
 
+#heroCarousel {
+    position: relative;
+}
+
 /* Carousel buttons */
 .glass-control.prev {
     left: 20px;
@@ -140,7 +145,7 @@ body {
     transform: scale(0.98);
 }
 
-#linux {
+.linux {
     color: #08111d;
 }
 
@@ -149,6 +154,10 @@ h1 {
     float: left;
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
+}
+
+#main {
+    margin-top: 2%;
 }
 
 #menu {
@@ -178,9 +187,6 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-
-
-
 }
 
 .link {
@@ -208,6 +214,14 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+.cinco {
+    float: right;
+    width: 15%;
+    height: 20%;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 /* ========================= */
@@ -254,6 +268,48 @@ footer p {
     .glass-control.next {
         right: 10px;
     }
+
+    #cabecera {
+        height: auto;
+        padding: 10px;
+        align-items: center;
+    }
+
+    h1 {
+        float: none;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    #menu {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .link {
+        width: 90%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .cinco {
+        float: none;
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #main {
+        padding: 15px;
+    }
+
+    ul {
+        padding: 0 10px;
+        text-align: center;
+    }
 }
 
 /* ========================= */
@@ -284,5 +340,22 @@ footer p {
     .btn-glass {
         width: 100%;
         max-width: 250px;
+    }
+      h1 {
+        font-size: 1.4rem;
+    }
+    .link {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .cinco {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
     }
 }
