@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de Sistemas Operativos</title>
-
+    <link rel="icon" href="./assets/images/logo.png">
     <link rel="stylesheet" href="assets/css/tipos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -33,15 +33,16 @@
 
                 <a href="contacto.html" class="link">Formulario de contacto</a>
 
-                <a href="#" class="link">Volver arriva</a>
+                <a href="#" class="link">Volver arriba</a>
 
             </div>
 
         </div>
 
 
-        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <div class=" carousel-inner">
 
                 <div class="carousel-item active" style="background-image: url('assets/images/windows.jpg');">
                     <div class="carousel-overlay">
@@ -51,52 +52,70 @@
 
                 <div class="carousel-item" style="background-image: url('assets/images/linux.png');">
                     <div class="carousel-overlay">
-                        <h1 id="linux">Linux</h1>
+                        <h1 class="linux">Linux</h1>
                     </div>
                 </div>
 
                 <div class="carousel-item" style="background-image: url('assets/images/apple.jpeg');">
                     <div class="carousel-overlay">
-                        <h1>Apple</h1>
+                        <h1 class="linux">Apple</h1>
                     </div>
                 </div>
 
             </div>
-
-            <!-- Controls -->
-            <button class="glass-control prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                &#10094;
-            </button>
-
-            <button class="glass-control next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                &#10095;
-            </button>
         </div>
+        <!-- Controls -->
+        <button class="glass-control prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            &#10094;
+        </button>
+
+        <button class="glass-control next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            &#10095;
+        </button>
+
 
 
         <div id="main">
+
             <ul id="lista">
+
                 <li id="mono">
+
                     <h3>Sistemas Monousuario</h3><br>
+
+                    <img src="assets/images/msdos.png" alt="" class="cinco">
+
                     <p>Son los sistemas operativos que solo permiten que existan un usuario y una cuenta al mismo
                         tiempo, son sistemas operativos
-                        más simples y que usan menos cantidad de recursos del ordenador, por ejemplo MS-DOS. Actualmente
-                        casi todos los sistemas operativos son multiusuario pero son una parte importante de lo que ha
+                        más simples y que usan menos cantidad de recursos del ordenador, por ejemplo MS-DOS.
+                        Actualmente
+                        casi todos los sistemas operativos son multiusuario pero son una parte importante de lo que
+                        ha
                         hecho que los sistemas operativos actuales sean como son.
                     </p>
                 </li>
                 <li id="usando">
-                    <h3>Sistemas multiusuario</h3>
-                    <p>Son los sistemas que permiten que varias personas utilicen el ordenador al mismo tiempo y también
-                        permite varias cuentas, un ejemplo de multiusuario de cuando se empezaron a utilizar en la <a
-                            href="./index.html#tercera">tercera generación</a> es UNIX. Este tipo de sistemas aumenta la
+                    <img src="assets/images/unix.jpeg" alt="" class="cinco">
+
+                    <h3>Sistemas multiusuario</h3><br>
+
+                    <p>Son los sistemas que permiten que varias personas utilicen el ordenador al mismo tiempo y
+                        también
+                        permite varias cuentas, un ejemplo de multiusuario de cuando se empezaron a utilizar en la
+                        <a href="./index.html#tercera">tercera generación</a> es UNIX. Este tipo de sistemas aumenta
+                        la
                         seguridad y organización porque cada
-                        usuario solamente puede acceder a sus archivos y configuraciones.</p>
+                        usuario solamente puede acceder a sus archivos y configuraciones.
+                    </p>
                 </li>
                 <li id="multi">
+                    <img src="assets/images/mac.jpeg" alt="" class="cinco">
                     <h3> Sistemas multitarea</h3>
-                    <p>Los sistemas operativos multitarea son los sistemas operativos que permiten cambiar entre tareas
-                        sin finalizar la tarea que se estaba ejecutando para ejecutar la que va a ejecutar o en otras
+
+                    <p>Los sistemas operativos multitarea son los sistemas operativos que permiten cambiar entre
+                        tareas
+                        sin finalizar la tarea que se estaba ejecutando para ejecutar la que va a ejecutar o en
+                        otras
                         palabras que puedes ejecutar varios programas a la vez, un ejemplo sería UNIX que empezo
                         en la
                         <a href="./index.html#tercera">tercera generación</a> actualmente
@@ -104,31 +123,43 @@
                     </p>
                 </li>
                 <li id="real">
+                    <img src="assets/images/Windows_dos.jpeg" alt="" class="cinco">
+
                     <h3>Sistemas de tiempo real</h3>
+
                     <p>Los Sistemas de tiempo real son los sistemas operativos que responden a los
                         procesos y eventos en un tiempo muy corto y predecible. Hay dos tipos los estrictos y los no
-                        estrictos.Un ejemplo de no estrictos serian Windows 10 y Windows 11 que dan una respuesta muy
+                        estrictos.Un ejemplo de no estrictos serian Windows 10 y Windows 11 que dan una respuesta
+                        muy
                         rapida pero puede fallar por eso no son tan estrictos. Los estrictos están diseñados para
-                        ejecutar tareas que requieren una respuesta rápida y fiable. Los estrictos se utilizan para por
-                        ejemplo dispositivos médicos, aviones, etc cosas que si tienen un fallo puede ser fatal para las
+                        ejecutar tareas que requieren una respuesta rápida y fiable. Los estrictos se utilizan para
+                        por
+                        ejemplo dispositivos médicos, aviones, etc cosas que si tienen un fallo puede ser fatal para
+                        las
                         personas que lo están usando o para las personas en las que se estan usando como los
                         dispositivos medicos por eso son estrictos.</p>
                 </li>
                 <li>
+                    <img src="assets/images/ubuntu.png" alt="" class="cinco">
+
                     <h3>Sistemas de tiempo compartido</h3>
-                    <p>Los sistemas de tiempo compartido son los sistemas Operativos que permiten que varios usuarios o
+
+                    <p>Los sistemas de tiempo compartido son los sistemas Operativos que permiten que varios
+                        usuarios o
                         procesos utilicen el procesador al mismo tiempo. Para conseguirlo, la CPU
                         reparte su tiempo en pequeños intervalos entre los distintos procesos. Esta tecnica da la
-                        sensación de que cada usuario tiene todo el sistema operativo para si mismo aunque en realidad
-                        estas compartiendo los recursos con los otros usuario y aplicaciones. Un ejemplo muy conocido de
+                        sensación de que cada usuario tiene todo el sistema operativo para si mismo aunque en
+                        realidad
+                        estas compartiendo los recursos con los otros usuario y aplicaciones. Un ejemplo muy
+                        conocido de
                         sistemas de tiempo compartido es Linux.</p>
                 </li>
             </ul>
+
+            <footer>
+                <p>2026 © Historia Sistemas operativos</p>
+            </footer>
         </div>
-        <footer>
-            <p>2026 © Historia Sistemas operativos</p>
-        </footer>
-    </div>
 </body>
 
 </html>
